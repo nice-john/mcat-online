@@ -1,0 +1,562 @@
+/* Apply background to the whole page */
+body {
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    background: url('../assets/img/background.jpg') no-repeat center center fixed;
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    color: #fff; /* Ensures text is visible if the background is dark */
+}
+
+/* Scrollbar Base Styles */
+::-webkit-scrollbar {
+    width: 16px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar:horizontal {
+    height: 17px; /* Height for horizontal scrollbar */
+}
+
+::-webkit-scrollbar-corner {
+    background: #c0c0c0; /* Default Windows-like background color */
+}
+
+/* Scrollbar Track (Entire Scrollbar Background) */
+::-webkit-scrollbar-track {
+    background-blend-mode: normal, difference, normal;
+    background-size: 3px 3px;
+    background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)),
+    linear-gradient(to right, black 50%, white 50%),
+    linear-gradient(to bottom, black 50%, white 50%);
+}
+
+
+/* Scrollbar Corner (Where horizontal and vertical scrollbars meet) */
+::-webkit-scrollbar-corner {
+    background: url('../assets/icons/scrollbar-background.svg') repeat;
+    background-size: cover; /* Same scaling */
+}
+
+
+/* Scrollbar Thumb (draggable part) */
+::-webkit-scrollbar-thumb {
+    background-color: #d4d0c8; /* Classic Windows button face */
+    box-shadow: inset 1px 1px #fff, inset -1px -1px #808080; /* 3D effect */
+}
+
+/* Scrollbar Buttons */
+::-webkit-scrollbar-button:vertical:start {
+    background: url('../assets/icons/button-up.svg') no-repeat center center;
+    background-size: contain;
+    height: 17px;
+}
+
+::-webkit-scrollbar-button:vertical:end {
+    background: url('../assets/icons/button-down.svg') no-repeat center center;
+    background-size: contain;
+    height: 17px;
+}
+
+::-webkit-scrollbar-button:horizontal:start {
+    background: url('../assets/icons/button-left.svg') no-repeat center center;
+    background-size: contain;
+    width: 16px;
+}
+
+::-webkit-scrollbar-button:horizontal:end {
+    background: url('../assets/icons/button-right.svg') no-repeat center center;
+    background-size: contain;
+    width: 16px;
+}
+
+
+/* Optional: Hover Effect */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #bfbfbf;
+}
+
+@font-face {
+  font-family: Boogaloo;
+  src: url(../assets/fonts/Daydream.ttf);
+}
+@font-face {
+  font-family: Minecraftia;
+  src: url(../assets/fonts/Minecraftia-Regular.ttf);
+}
+@font-face {
+    font-family: Liberation;
+  src: url(../assets/fonts/LiberationMono-Regular.ttf);
+}
+@font-face {
+font-family: Comic Sans;
+src: url(../assets/fonts/Ldfcomicsans-jj7l.ttf);
+}
+
+h1, h2, h3 {
+    display: none;
+}
+
+.banner-wrapper {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    text-align: center;
+}
+
+.banner-wrapper .banner-logo {
+    background-color: #000000;
+}
+
+#header-banner .banner-wrapper aside  {
+    background-color: #650499;
+}
+
+.banner-wrapper aside .banner-ad-image img {
+    max-width: -webkit-fill-available;
+}
+
+.banner-wrapper aside .banner-ad-text {
+    display: none;
+}
+
+header .plugins-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+header .plugins-wrapper div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff3301;
+    border-top: .5rem solid #ff3301;
+    border-bottom: .5rem solid #ff3301;
+    font-family: Boogaloo;
+    text-transform: lowercase;
+
+}
+
+header .plugins-wrapper div:first-child * {
+    margin: .1rem 0;
+}
+
+header .plugins-wrapper div:first-child:hover {
+    background-color: #669900;
+    border-top: .5rem solid #669900;
+    border-bottom: .5rem solid #669900;
+    cursor: pointer;
+}
+
+.intro {
+    color: #650499;
+    font-family: Minecraftia;
+    src: url(../assets/fonts/Minecraftia-Regular.ttf);
+}
+
+.crayola-orange-yellow-color {
+    color: #ffcc66;
+}
+/*.resize {
+    width:589px;
+    height:734px;
+}
+*/
+.white-color {
+    color: #ffffff;
+}
+
+header .plugins-wrapper .warning-message{
+    font-size: .5rem;
+    font-family: verdana, helvetica, arial;
+    margin: .5rem 0;
+}
+
+.menu-icon {
+    display: block;
+    background-image: url('../assets/img/menu-icon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 2rem;
+    height: 2rem;
+    margin: .5rem auto;
+}
+
+header nav section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000;
+    font-family: Boogaloo;
+    border: .5rem solid #000000;
+    color: #ffffe6;
+}
+
+header nav section button {
+    font-family: Boogaloo;
+    text-transform: uppercase;
+    background-color: #ffe4e1;
+    color: #ffffe6;
+    cursor: pointer;
+    border: 0;
+    border-radius: 50%;
+    margin-left: .5rem;
+}
+
+header nav section label {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+header nav section label * {
+    margin: .2rem 0;
+}
+
+header nav ul#nav-menu {
+    padding: 0;
+    margin: .2rem 0;
+    display: none;
+    flex-direction: column;
+    font-family: Boogaloo;
+    align-items: stretch;
+    width: 50%;
+    margin: 0px auto 0.5rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+header nav ul li {
+    list-style: none;
+    background-color: #ff69b4;
+    padding: 2px 7px;
+    border-radius: 7px;
+    margin-top: .5rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+main #spotlight {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+main #spotlight img {
+    width: 100%;
+}
+main #spotlight-bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+
+main #spotlight-bottom img {
+    width: 100%;
+}
+/* Text Left - Image Right Section */
+#text-left-image-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+#text-left-image-right .content-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem; /* Space between text and image */
+}
+
+#text-left-image-right .text-left {
+    flex: 1;
+    text-align: left;
+    color: #046c99;
+    font-size: 1rem;
+    font-family: Minecraftia;
+    src: url(../assets/fonts/Minecraftia-Regular.ttf);
+}
+
+#text-left-image-right .image-right {
+    flex: 1;
+    text-align: center;
+}
+/* Small Image Below Text */
+#text-left-image-right .middle-fish {
+    margin-top: 1rem; /* Space below text */
+    text-align: center; /* Center horizontally */
+}
+
+#text-left-image-right .middle-fish img {
+    width: 50%;
+    height: auto;
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+/* Small Image Below Text */
+/* Smaller Decorative Image Below */
+#spotlight-bottom .spotlight-bottom-rightpic {
+    text-align: center; /* Center the small image and text */
+    margin-top: 1rem;
+}
+
+#spotlight-bottom .spotlight-bottom-rightpic img {
+    width: 100px; /* Make the image smaller */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 4px; /* Optional rounded corners */
+    margin-bottom: 0.5rem; /* Space below the image */
+}
+
+#text-left-image-right .image-right img {
+    max-width: 100%;
+    height: auto;
+}
+#spotlight-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+#spotlight-bottom .content-wrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem; /* Space between text and image */
+}
+
+#spotlight-bottom .text-left {
+    flex: .5;
+    text-align: left;
+    color: #e695ca;
+    font-family: Minecraftia;
+    src: url(../assets/fonts/Minecraftia-Regular.ttf);
+}
+
+#spotlight-bottom .image-right {
+    flex: 3;
+    text-align: center;
+}
+
+#spotlight-bottom .image-right img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+section#characters {
+    display: none;
+}
+
+section#featured {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: verdana, helvetica, arial;
+    font-weight: bold;
+    font-size: .6rem;
+    margin: 0 1rem;
+}
+
+section#featured article {
+    border-top: .3rem solid #000000;
+    padding: 0 .4rem;
+}
+
+section#featured article img {
+        min-width: 50%;
+    }
+
+section#featured article:nth-child(2) {
+    border-top: 0;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer #legalities {
+    margin: 1.2rem 0;
+}
+
+footer #legalities a {
+    font-family: helvetica, arial;
+    font-size: .8rem;
+    color: #ff6600;
+}
+
+footer #footer-banner {
+    width: 100%;
+}
+
+footer #copyright-information {
+    margin: 1.2rem 0;
+}
+
+footer #copyright-information p {
+    text-align: center;
+    margin: 0;
+    font-size: .7rem;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    body {
+        max-width: 38.43rem;
+        margin: 0 auto;
+    }
+
+    .banner-wrapper {
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .banner-wrapper .banner-logo {
+        display: inline-flex;
+    }
+
+    .banner-wrapper aside {
+        display: flex;
+    }
+
+    .banner-wrapper aside .banner-ad-image {
+        display: flex;
+    }
+
+    .banner-wrapper aside .banner-ad-image img {
+        max-width: none;
+    }
+    .banner-ad-top {
+        text-align: center;
+        padding: -2rem;
+    }
+
+    .banner-ad-top img {
+        display: inline-block;
+        max-width: 150%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .banner-wrapper aside .banner-ad-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #000;
+        color: #ffffe6;
+        text-transform: uppercase;
+        font-family: 'Boogaloo';
+    }
+
+    .rotate-90 {
+        display: block;
+        height: fit-content;
+        transform: rotate(90deg);
+    }
+
+    header .plugins-wrapper div:first-child {
+        height: 1.8rem;
+        flex-direction: row;
+        border: 0;
+    }
+
+    header .plugins-wrapper div:first-child span,
+    header .plugins-wrapper div:first-child img {
+        margin-left: .2rem;
+    }
+
+    header .plugins-wrapper div:first-child:hover {
+        border: 0;
+    }
+
+    header nav section {
+        flex-direction: row;
+        justify-content: space-around;
+        border: 0;
+        height: 1.8rem;
+    }
+    
+    header nav section label {
+        flex-direction: row;
+    }
+
+    header nav ul {
+        padding: 0;
+        margin: .5vh 0;
+        display: flex;
+        justify-content: space-between;
+        font-family: Boogaloo;
+    }
+
+    header nav ul#nav-menu {
+        display: flex;
+        flex-direction: row;
+        margin: .2rem 0;
+        width: auto;
+        align-items: center;
+        font-size: .6rem;
+    }
+
+    nav .menu-icon {
+        display: none;
+    }
+
+    header nav ul li {
+        margin-top: 0;
+        border-radius: 7px;
+    }
+
+main #spotlight {
+    display: flex;
+    flex-direction: row; /* Aligns images side by side */
+    justify-content: space-between; /* Adds space between the left and right images */
+    align-items: center; /* Aligns images vertically */
+}
+
+    section#characters {
+        display: flex;
+        margin: .3rem 0;
+    }
+
+    section#characters img {
+        width: 100%;
+    }
+
+    section#featured {
+        flex-direction: row;
+    }
+
+    section#featured article {
+        display: flex;
+        align-items: center;
+        border-left: .3rem solid #000000;
+        border-top: 0;
+    }
+
+    .flex-column {
+        flex-direction: column;
+    }
+
+    section#featured article:nth-child(2) {
+        border-left: 0;
+        flex-basis: 40%;
+    }
+
+
+
+
+}

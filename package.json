@@ -1,0 +1,18 @@
+{
+  "name": "cartoonnetwork-2000-clone-main",
+  "version": "1.0.0",
+  "description": "Clone of Cartoon Network website in 00's for educational purposes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "postcss css/styles.css -o css/styles.dist.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "postcss-inline-svg": "^6.0.0"
+  }
+}
