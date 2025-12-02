@@ -540,6 +540,7 @@ button:hover{
     background-position: center;
     background-size: 250px;
     max-height: 320px;
+    min-height: 320px;
     display: flex;
     align-items: center;
     justify-content: center;
