@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Field Notes – John D</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- This is how you reference css/css.css -->
+    <link rel="stylesheet" href="css/css.css">
+</head>
+
+
+<body>
+<div class="page-frame">
+
+    <header class="masthead">
+        <div class="masthead-top">
+            <div class="masthead-logo">
+                <!-- drop in an animated gif here later -->
+                <span class="logo-mark">JD</span>
+            </div>
+            <div class="masthead-title">
+                <h1>JOHN DOSSICK ONLINE</h1>
+                <p class="tagline">Art · Design · Digital Engineering</p>
+            </div>
+            <div class="masthead-stamp">
+                <span class="stamp-label">JOHN STUFF</span>
+                <span class="stamp-year">2001<span class="stamp-plus">+</span></span>
+            </div>
+        </div>
+
+        <nav class="top-nav">
+            <a href="index.html">Back Home</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- PROJECT PAGE -->
+        <section class="section-block">
+            <header class="section-header">
+                <h2>Memory Angels</h2>
+                <p class="section-subtitle">
+                    Sculpture · Photo · Photoshop
+                </p>
+            </header>
+
+            <div class="section-list">
+                <article class="list-item">
+
+                    <p style="margin-top:1rem;">
+                        This was a collaborative project with Madeline Drumheller. She started by making a wire
+                        sculpture which vaguely resembled a face.
+                        <br>
+                    </p>
+                    <!-- Video or Image Frame -->
+                    <div class="page-image memory-image-1">
+                    </div>
+                    <p style="margin-top:1rem;">
+                        I turned the image into a solid silhouette of the sculpture, and began duplicating,
+                        flipping, and mirroring the image onto itself to create interesting patterns.
+                        <br>
+                    </p>
+                    <div class="page-image memory-image-2">
+                    </div>
+                    <p style="margin-top:1rem;">
+                        And then began combining these patterns with photographs taken by Madeline.
+                        <br>
+                    </p>
+                    <div class="page-image memory-image-3">
+                    </div>
+                    <p style="margin-top:1rem;">
+                        And then created a grid of 12 photos to be printed as a zine.
+                        <br>
+                    </p>
+                    <div class="page-image memory-image-4">
+                    </div>
+                    <p style="margin-top:1rem;">
+                        I have to dig the zine out of box so I can upload a finished photo of it.
+                        <br>
+                    </p>
+                    <p class="card-meta">Collaborative / Multimedia</p>
+
+                </article>
+            </div>
+
+            <!-- Simple Back Link -->
+            <p style="text-align:center; margin-top:2rem;">
+                <a href="index.html">← More Nice Stuff</a>
+            </p>
+
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© <span id="year">2001</span> John D · Field Notes</p>
+        <p class="footer-small">
+            Best viewed on a CRT monitor at 1024×768.
+        </p>
+    </footer>
+</div>
+
+<script>
+    // update faux-retro year range but keep the 1997 joke
+    const y = new Date().getFullYear();
+    document.getElementById('year').textContent = '2001–' + y;
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const trigger = document.getElementById('2oc-audio-trigger');
+        const audio   = document.getElementById('2oc');
+
+        if (!trigger || !audio) return;
+
+        trigger.addEventListener('click', function () {
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        });
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const trigger = document.getElementById('twhf-audio-trigger');
+        const audio   = document.getElementById('twhf');
+
+        if (!trigger || !audio) return;
+
+        trigger.addEventListener('click', function () {
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        });
+    });
+</script>
+</body>
+</html>

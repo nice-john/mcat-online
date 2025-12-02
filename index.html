@@ -2,160 +2,413 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Field Notes – John D</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cartoon Network 2000</title>
-    <link rel="stylesheet" href="./css/css.css">
+    <!-- This is how you reference css/css.css -->
+    <link rel="stylesheet" href="css/css.css">
 </head>
-    
-    <h1>Cartoon Network 2000 Clone</h1>
 
-    <header>
-        <h2>Header</h2>    
-        <section id="hearts">
-            <h3>Banner top</h3>
-            <div class="banner-wrapper">
-                <div class="banner-logo">
-                    <img src="./assets/img/madcat.jpg" alt="webpage logo">
-                </div>
 
-                <aside>
-                    <div class="banner-ad-image">
-                        <img src="assets/img/newhearts.gif" alt="brand advertising banner">
-                    </div>
-                    
+<body>
+<div class="page-frame">
 
-                </aside>
+    <header class="masthead">
+        <div class="masthead-top">
+            <div class="masthead-logo">
+                <!-- drop in an animated gif here later -->
+                <span class="logo-mark">JD</span>
             </div>
-        </section>
-
-
+            <div class="masthead-title">
+                <h1>DIGITAL FIELD NOTES</h1>
+                <p class="tagline">Art · Design · Digital Engineering</p>
             </div>
-        </section>
+            <div class="masthead-stamp">
+                <span class="stamp-label">JOHN STUFF</span>
+                <span class="stamp-year">2001<span class="stamp-plus">+</span></span>
+            </div>
+        </div>
 
-        <nav>
-            <h3>Navigation</h3>
-
-
-            </a>
-
-            <ul id="nav-menu">
-                <li><a href="#">Scared at 221 N Cleveland</a></li>
-                <li><a href="#">Laundry Shoot</a></li>
-                <li><a href="#">Miscellaneous DigiPics</a></li>
-                <li><a href="#">Milk</a></li>
-                <li><a href="#">Alone in Byrd Theater</a></li>
-                <li><a href="#">Paulie Portraits</a></li>
-            </ul>
+        <nav class="top-nav">
+            <a href="#photography">Photography</a>
+            <a href="#graphic-design">Graphic Design</a>
+            <a href="#video">Short Videos</a>
+            <a href="#minecraft">Minecraft Mods</a>
+            <a href="#github">GitHub</a>
+            <a href="#about">About</a>
         </nav>
     </header>
 
-
-<footer>
-    <h2>Footer</h2>
-    <aside>
-        <div class="banner-ad-top">
-            <img src="assets/img/pink_star.gif" alt="brand advertising banner">
-        </div>
-</footer>
-
     <main>
-        <h2>Main Section</h2>
-        
-        <section id="spotlight">
-            <h3>Spotlight</h3>
-
-            <div class="left">
-                <img src="./assets/img/IMG_3956.jpg"  class="resize">
+        <!-- HERO / INTRO -->
+        <section class="hero">
+            <div class="hero-left">
+                <h2 class="hero-kicker">Digital Field Log</h2>
+                <h3 class="hero-headline">
+                    Notes from cities, screens, and strange coastlines.
+                </h3>
+                <p class="hero-copy">
+                    This my everything website: travel photographs, scrappy pixels,
+                    and videogame mods built after midnight. Stylized as classroom science poster meets
+                    dial-up homepage. Written in pure HTML and CSS.
+                </p>
             </div>
-
-            <div class="right">
-                <img src="./assets/img/spotlight-right.gif" alt="spotlight main image">
+            <div class="hero-right">
+                <!-- Swap this for a photo / collage -->
+                <div class="hero-image-frame">
+                    <div class="hero-image stoos-image">
+                        <span> <br> </span>
+                    </div>
+                    <p class="hero-caption">
+                        Stoos, Switzerland
+                    </p>
+                </div>
             </div>
-            <div>
-                <span class="intro">Welcome to the website for madelines and cats</span>
+        </section>
+
+        <!-- PHOTOGRAPHY -->
+        <section id="photovideo" class="section-block">
+            <header class="section-header">
+                <h2>PHOTO AND VIDEO</h2>
+                <p class="section-subtitle">
+                    compilations of captured instants
+                </p>
+            </header>
+
+            <div class="section-grid">
+                <article class="card">
+                    <a href="i-followed-a-pretty-girl.html" class="card-link">
+                    <div class="card-image ss-image">
+                        <span class="image-label"></span>
+                    </div>
+
+                    <div class="card-body">
+                        <h3>I Followed A Pretty Girl Through Strawberry Street Market</h3>
+                        <p>
+                            A timelapse of digital collage.
+                        </p>
+                        <p class="card-meta">Photography / Collage</p>
+                    </div>
+                    </a>
+                </article>
+
+                <article class="card">
+                    <a href="brutalist-vcu.html" class="card-link">
+                    <div class="card-image bv-image">
+                        <span class="image-label"> </span>
+                    </div>
+                    <div class="card-body">
+                        <h3>The Brutalist Architecture of VCU</h3>
+                        <p>
+                            An unexpected campus in a Victorian city.
+                        </p>
+                        <p class="card-meta">Architectural Montage</p>
+                    </div>
+                    </a>
+                </article>
+
+                <article class="card">
+                    <a href="january-evening-in-otego.html" class="card-link">
+                    <div class="card-image os-image">
+                        <span class="image-label"> </span>
+                    </div>
+                    <div class="card-body">
+                        <h3>A January Evening in Otego</h3>
+                        <p>
+                            The snow was quiet.
+                        </p>
+                        <p class="card-meta">VIDEO</p>
+                    </div>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- GRAPHIC DESIGN -->
+        <section id="digital art" class="section-block">
+            <header class="section-header">
+                <h2>DIGITAL ART</h2>
+                <p class="section-subtitle">
+                    photoshop, animation, and painted pixels
+                </p>
+            </header>
+
+            <div class="section-grid">
+                <article class="card">
+                    <a href="memory-angels.html" class="card-link">
+                    <div class="card-image ma-image">
+                        <span class="image-label"> </span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Memory Angels</h3>
+                        <p>
+                            A collaboration with Madeline Drumheller, digitally connecting sculpture and photo.
+                        </p>
+                        <p class="card-meta">Web / Personal</p>
+                    </div>
+                    </a>
+                </article>
+
+                <article class="card">
+                    <a href="wax-boy.html" class="card-link">
+                    <div class="card-image wb-image">
+                        <span class="image-label"> </span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Wax Boy</h3>
+                        <p>
+                            Sweet, sleepy, Wax Boy.
+                        </p>
+                        <p class="card-meta">Animation / Illustration</p>
+                    </div>
+                    </a>
+                </article>
+
+                <article class="card">
+                    <a href="who-is-your-scapegoat.html" class="card-link">
+                    <div class="card-image us-image">
+                        <span class="image-label"> </span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Who Sits Beyond Your Scapegoat?</h3>
+                        <p>
+                            Project for Univ
+                        </p>
+                        <p class="card-meta">Posters / Experiments</p>
+                    </div>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- SHORT VIDEOS -->
+        <section id="music" class="section-block">
+            <header class="section-header">
+                <h2>MUSIC</h2>
+                <p class="section-subtitle">
+                    Music made by me - Just for fun.
+                </p>
+            </header>
+
+            <div class="audio-row">
+
+                <article class="list-item">
+                    <h3>2 O'Clock</h3>
+                    <div class="audio-card">
+                        <img
+                                src="assets/icons/sound2.gif"
+                                alt="Play sound"
+                                class="audio-icon"
+                                id="2oc-audio-trigger"
+                        >
+                        <p><-Click Me!</p>
+
+                        <audio id="2oc">
+                            <source src="assets/audio/2oc.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <p> </p>
+                    <p class="card-meta">SNIPPET</p>
+                </article>
+
+                <article class="list-item">
+                    <h3>They Were Here First</h3>
+                    <div class="audio-card">
+                        <img
+                                src="assets/icons/sound2.gif"
+                                alt="Play sound"
+                                class="audio-icon"
+                                id="twhf-audio-trigger"
+                        >
+                        <p><-Click Me!</p>
+
+                        <audio id="twhf">
+                            <source src="assets/audio/twhf.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <p> </p>
+                    <p class="card-meta">UNMASTERED SINGLE</p>
+                </article>
 
             </div>
         </section>
 
+        <!-- MINECRAFT MODS -->
+        <section id="minecraft" class="section-block">
+            <header class="section-header">
+                <h2>MINECRAFT MODS</h2>
+                <p class="section-subtitle">
+                    rocks, seafood, and creatures
+                </p>
+            </header>
 
-        <section id="text-left-image-right">
-            <h3>Text Left - Image Right Section</h3>
-            <div class="content-wrapper">
-                <div class="text-left">
-                    <p>At the top of your screen, you can find all of my photography</p>
-                    <div class="middle-fish">
-                        <img src="./assets/img/swimfish.gif" alt="Small decorative image">
+            <div class="section-grid">
+                <article class="card">
+                    <a href="https://www.curseforge.com/minecraft/mc-mods/better-beginnings" class="card-link">
+                    <div class="card-image bb-image">
+                        <span class="image-label"> </span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Better Beginnings</h3>
+                        <p>
+                            A Forge mod that slows early-game progression with new tools,
+                            firestarters, and survival tweaks. Built to make
+                            the first day feel like a real expedition.
+                        </p>
+                        <p class="card-meta">Gameplay Rework / WorldGen</p>
+                    </div>
+                    </a>
+                </article>
+
+                <article class="card">
+                    <a href="https://www.curseforge.com/minecraft/mc-mods/tidesdelight" class="card-link">
+                    <div class="card-image td-image">
+                        <span class="image-label"> </span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Tide's Delight</h3>
+                        <p>
+                            Brings the fish of Tide to the cutting board of Farmer's Delight.
+                            Adds over 15 new dishes, and one very unique potion.
+                        </p>
+                        <p class="card-meta">New items / Mod integration</p>
+                    </div>
+                    </a>
+                </article>
+
+                <article class="card">
+                    <a href="https://www.curseforge.com/minecraft/mc-mods/creatures-and-beasts-the-unofficial-port" class="card-link">
+                    <div class="card-image cb-image">
+                        <span class="image-label">Creatures and Beasts</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Creatures and Beasts: The Unofficial Port</h3>
+                        <p>
+                            Port of the popular Creatures And Beasts mod to Minecraft 1.20.1.
+                        </p>
+                        <p class="card-meta">GeckoLib / version Port</p>
+                    </div>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- GITHUB -->
+        <section id="github" class="section-block">
+            <header class="section-header">
+                <h2>GITHUB</h2>
+                <p class="section-subtitle">
+                    source code, experiments &amp; homework that grew legs
+                </p>
+            </header>
+
+            <div class="section-list">
+                <article class="list-item">
+                    <h3>Code Repositories</h3>
+                    <p>
+                        Minecraft mods, algorithms homework, and small tools live here.
+                        Expect Java, a bit of web, and infrastructure scripts.
+                    </p>
+                    <p class="card-meta">
+                        <span class="inline-label">Link:</span>
+                    <p>
+                        <a href="https://github.com/nice-john">https://github.com/nice-john</a>.
+                    </p>
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section-block section-about">
+            <header class="section-header">
+                <h2>ABOUT JOHN</h2>
+                <p class="section-subtitle">
+                    artist · developer · guy-looking-for-a-job
+                </p>
+            </header>
+
+            <div class="about-layout">
+                <div class="about-photo john-photo">
+                    <div class="portrait-placeholder">
+                        <span> <br> </span>
                     </div>
                 </div>
-                <div class="image-right">
-                    <img src="./assets/img/IMG_2769.jpg" alt="Another descriptive alt text">
+                <div class="about-text">
+                    <p>
+                        I'm a photographer, graphic designer, sometimes-musician, and developer who treats
+                        the computer as the terminal for all things creative. I graduated with a B.S. in computer science at SUNY:
+                        Empire State University after spending two years at VCU in Richmond, VA, and my freshman year at
+                        JMU before being interupted by COVID.
+                    </p>
+                    <p>
+                        Most of what I make sits somewhere between observation and assembly. I like
+                        wandering with a camera until a color or texture interrupts me, then pulling
+                        those fragments into something new—zines, posters, tiny looping videos,
+                        stray graphics that feel like they fell out of an early web tutorial. Travel
+                        always shows up in the work, whether it’s a metro station palette from Paris,
+                        the soft geometry of Richmond brickwork, or the winter haze above the
+                        Catskills. I treat these moments as raw material, the same way I treat pixels
+                        or code.
+                    </p>
+                    <p>
+                        On the technical side, I build Minecraft Mods, quirky websites for myself and friends, and a
+                        super secret serious project that I can't tell you about.
+                        I enjoy wrestling with Java, debugging misbehaving entities, and pasting together CSS snippets
+                        just as much as shooting digital at blue hour.
+                    </p>
+                    <p>
+                        If you're here from a job application I've submitted, keep this in mind: I treat every project, technical
+                        or artistic, with the same design-forward mindset. A good eye goes a long way, in code, in a spreadsheet, in even an email.
+                    </p>
                 </div>
             </div>
-        </section>
-
-        <section id="spotlight-bottom">
-            <h3>Text Left - Image Right Section</h3>
-            <div class="content-wrapper">
-                <div class="image-right">
-                    <img src="./assets/img/IMG_3957.jpg" alt="Another descriptive alt text">
-                </div>
-                <div class="spotlight-bottom-rightpic">
-                    <img src="./assets/img/pinkbutters1.gif" alt="Small decorative image">
-                    <div class="text-left">
-                        <p>and at the bottom are my other works of art</p>
-                </div>
-
-            </div>
-        </section>
-        </section>
-
-
-        <footer>
-            <h2>Footer</h2>
-            <aside>
-                <div class="banner-ad-image">
-                    <img src="assets/img/vineflowersln.gif" alt="brand advertising banner">
-                </div>
-        </footer>
-
-        <section id="featured">
-            <h3>Featured</h3>
-            <article>
-                <img src="./assets/img/musicbutton.gif" alt="">
-                <p>Free shipping on Your First Order <a href="#">music!</a></p>
-            </article>
-            
-            <article>
-                <img src="./assets/img/fish%20(1).gif" alt="">
-                <p>It's all coming back to you. <a href="#">miscellaneous</a></p>
-            </article>
-            
-            <article class="flex-column">
-                <img src="./assets/img/walking-cat.gif" alt="">
-                <p><a href="#">oslocat and juniperkitten</a></p>
-            </article>
         </section>
     </main>
 
-    <footer>
-        <h2>Footer</h2>
-        <aside>
-            <div class="banner-ad-image">
-                <img src="assets/img/vineflowersln.gif" alt="brand advertising banner">
-            </div>
-        <section id="legalities">
-            <h3>Legalities</h3>
-            <a href="#">meow Policy.</a>
-        </section>
-
-        <section id="copyright-information">
-            <h3>Copyright information</h3>
-            <p>meow.</p>
-        </section>
+    <footer class="site-footer">
+        <p>© <span id="year">2001</span> John Dossick · Digital Field Notes</p>
+        <p class="footer-small">
+            Best viewed on a CRT monitor at 1024×768.
+        </p>
     </footer>
+</div>
 
-    <script type="text/javascript" src="./js/index.js"></script>
+<script>
+    // update faux-retro year range but keep the 1997 joke
+    const y = new Date().getFullYear();
+    document.getElementById('year').textContent = '2001–' + y;
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const trigger = document.getElementById('2oc-audio-trigger');
+        const audio   = document.getElementById('2oc');
+
+        if (!trigger || !audio) return;
+
+        trigger.addEventListener('click', function () {
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        });
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const trigger = document.getElementById('twhf-audio-trigger');
+        const audio   = document.getElementById('twhf');
+
+        if (!trigger || !audio) return;
+
+        trigger.addEventListener('click', function () {
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        });
+    });
+</script>
 </body>
-<link rel="stylesheet" href="./css/styles.dist.css">
 </html>

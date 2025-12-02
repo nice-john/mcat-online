@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Field Notes – John D</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- This is how you reference css/css.css -->
+    <link rel="stylesheet" href="css/css.css">
+</head>
+
+
+<body>
+<div class="page-frame">
+
+    <header class="masthead">
+        <div class="masthead-top">
+            <div class="masthead-logo">
+                <!-- drop in an animated gif here later -->
+                <span class="logo-mark">JD</span>
+            </div>
+            <div class="masthead-title">
+                <h1>JOHN DOSSICK ONLINE</h1>
+                <p class="tagline">Art · Design · Digital Engineering</p>
+            </div>
+            <div class="masthead-stamp">
+                <span class="stamp-label">JOHN STUFF</span>
+                <span class="stamp-year">2001<span class="stamp-plus">+</span></span>
+            </div>
+        </div>
+
+        <nav class="top-nav">
+            <a href="index.html">Back Home</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- PROJECT PAGE -->
+        <section class="section-block">
+            <header class="section-header">
+                <h2>The Brutalist Architecture of VCU</h2>
+                <p class="section-subtitle">
+                    Architectural Montage · Videography · 2023
+                </p>
+            </header>
+
+            <div class="section-list">
+                <article class="list-item">
+
+                    <!-- Video or Image Frame -->
+                    <div class="hero-image-frame" style="width:50%; max-width: 720px; margin:auto;">
+                        <video
+                                src="assets/img/brutalist-vcu-full.mp4"
+                                controls
+                                style="width:100%; border-radius: 6px;"
+                        ></video>
+                    </div>
+
+                    <!-- Description -->
+                    <p style="margin-top:1rem;">
+                        Built as a short observational video exploring repetition, weight,
+                        and campus architecture people walk past every day without noticing.
+                    </p>
+
+                    <p class="card-meta">Video | Architectural Study</p>
+                </article>
+            </div>
+
+            <!-- Simple Back Link -->
+            <p style="text-align:center; margin-top:2rem;">
+                <a href="index.html">← More Nice Stuff</a>
+            </p>
+
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© <span id="year">2001</span> John D · Field Notes</p>
+        <p class="footer-small">
+            Best viewed on a CRT monitor at 1024×768.
+        </p>
+    </footer>
+</div>
+
+<script>
+    // update faux-retro year range but keep the 1997 joke
+    const y = new Date().getFullYear();
+    document.getElementById('year').textContent = '2001–' + y;
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const trigger = document.getElementById('2oc-audio-trigger');
+        const audio   = document.getElementById('2oc');
+
+        if (!trigger || !audio) return;
+
+        trigger.addEventListener('click', function () {
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        });
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const trigger = document.getElementById('twhf-audio-trigger');
+        const audio   = document.getElementById('twhf');
+
+        if (!trigger || !audio) return;
+
+        trigger.addEventListener('click', function () {
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        });
+    });
+</script>
+</body>
+</html>
